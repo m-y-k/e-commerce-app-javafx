@@ -74,7 +74,7 @@ public class ProductList {
         return tablePane;
     }
     public Product getSelectedProduct() {
-        // getting selected item
+        // getting the selected item
         return productTable.getSelectionModel().getSelectedItem();
     }
 }
