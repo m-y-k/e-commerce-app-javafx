@@ -32,7 +32,7 @@ public class ProductList {
         quantity.setCellValueFactory(new PropertyValueFactory<>("quantity"));
 
 
-//        ObservableList<Product> productsList = FXCollections.observableArrayList();
+//       ObservableList<Product> productsList = FXCollections.observableArrayList();
 
 
         productTable = new TableView<>();
