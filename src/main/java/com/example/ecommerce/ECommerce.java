@@ -38,13 +38,13 @@ public class ECommerce extends Application {
     private final int height = 500;
     private final int headerLine = 50;
 
-    private void addItemsToCart(Product product) {
-        if (!cartItems.contains(product)) {
+    private void addItemsToCart(Product product) { //null
+
+        if (!cartItems.contains(product) && product != null) {
             cartItems.add(product);
-            if (product != null)
-                showDialogue(product.getName() + " is added to the cart");
-            else showDialogue("Please choose a mobile");
+            showDialogue(product.getName() + " is added to the cart");
         }
+        else showDialogue("Please choose a mobile");
     }
 
     private GridPane headerBar(Button button) {
